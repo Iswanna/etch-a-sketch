@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  
+    <header id="header">
+        <h1>ETCH-A-SKETCH</h1>
+    </header>
+    <div id="grid-size">
+        <p>New grid size: </p> 
+        <input type="text" id="user-number"> 
+        <p id="copy-input"></p>
+        <button id="user-submit">Submit</button>
+    </div>
+
+    <p id="prompt"></p>
+
+    <form>
+        
+        <input type="radio" id="black-pen" name="pen" value="black-pen">
+        <label for="black-pen">Black</label>
+
+        <input type="radio" id="red-pen" name="pen" value="red-pen">
+        <label for="red-pen">Red</label>
+
+        <input type="radio" id="blue-pen" name="pen" value="blue-pen">
+        <label for="blue-pen">Blue</label>
+
+        <input type="radio" id="rainbow-pen" name="pen" value="rainbow-pen">
+        <label for="rainbow-pen">Rainbow</label>
+
+        <input type="radio" id="eraser-pen" name="pen" value="eraser-pen">
+        <label for="eraser-pen">Eraser</label>
+
+        <button id="clear-button">Clear</button>
+        
+    </form>
+
+    <div>
+        <div class="container"></div>
+    </div>
+
+    <footer>
+        <p>2023 Iswat Bello for <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch" target="_blank">The Odin Project</a></p>
+    </footer>
+
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
