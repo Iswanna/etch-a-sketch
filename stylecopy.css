@@ -83,11 +83,11 @@ html, body {
     font-family: exo;
     border: 2px solid rgb(71, 69, 69);
     cursor: pointer;
- }
+}
 
- #copy-input {
+#copy-input {
      margin-right: 10px;
- }
+}
 
 #prompt {
     font-size: 14px;
