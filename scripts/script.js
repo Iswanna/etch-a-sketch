@@ -28,7 +28,7 @@ function entryHint() {
 function duplicateGrid() {
     let userGrid = userValue.value;
     copyInput.textContent = "x " + userGrid;
-    console.log(copyInput.textContent);
+    
 }
 
 function changeColor() {
@@ -116,6 +116,6 @@ window.addEventListener("load", grid10);
 userValue.addEventListener("focus", entryHint);
 userValue.addEventListener("keyup", duplicateGrid);
 userSubmit.addEventListener("click", makeGrid);
-//clearButton.addEventListener("click", clearGrid);
+clearButton.addEventListener("click", clearGrid);
 
 
