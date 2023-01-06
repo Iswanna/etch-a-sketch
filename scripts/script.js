@@ -12,13 +12,18 @@ function grid10() {
         let row = document.createElement('div');
         row.classList.add('row');
         containerDiv.appendChild(row);
+        
         for(let k = 0; k < 10; k++) {
             let column = document.createElement('div');
             column.classList.add('column')
             row.appendChild(column);
+            
+            
         }
+       
     } 
     draw();
+    
 } 
 
 function entryHint() {
@@ -57,6 +62,7 @@ function draw() {
     
    
     for (let i = 0; i < columns.length; i++) {
+        //adds event listener to all divs with class "column"
         columns[i].addEventListener("mouseover", changeColor);
     }
     
@@ -71,13 +77,14 @@ function makeGrid() {
         promptText.textContent = "Make sure it's a number from 2 to 99!";
 
         for(let i = 0; i < 10; i++) {
-            let row1 = document.createElement('div');
-            row1.classList.add('row');
-            containerDiv.appendChild(row1);
+            let row = document.createElement('div');
+            row.classList.add('row');
+            containerDiv.appendChild(row);
+
             for(let k = 0; k < 10; k++) {
                 let column = document.createElement('div');
                 column.classList.add('column')
-                row1.appendChild(column1);
+                row.appendChild(column);
             }
         } 
     } else {
@@ -89,13 +96,14 @@ function makeGrid() {
        
         
         for(let i = 0; i < number; i++) {
-            let row1 = document.createElement('div');
-            row1.classList.add('row');
-            containerDiv.appendChild(row1);
+            let row = document.createElement('div');
+            row.classList.add('row');
+            containerDiv.appendChild(row);
+            
             for(let k = 0; k < number; k++) {
-                let column1 = document.createElement('div');
-                column1.classList.add('column')
-                row1.appendChild(column1);
+                let column = document.createElement('div');
+                column.classList.add('column')
+                row.appendChild(column);
             }
         } 
     } 
@@ -103,7 +111,7 @@ function makeGrid() {
     draw();
 }
 
- 
+//eraser function loops through all column divs and sets background to "" in DOM
 function clearGrid() {
     let columns = document.getElementsByClassName("column");
     for (let i = 0; i < columns.length; i++) {

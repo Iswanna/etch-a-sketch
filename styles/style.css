@@ -132,23 +132,6 @@ form {
     flex: 1;
 }
 
-.column-black {
-    border: 1px solid rgb(26, 25, 25);
-    background-color: rgb(46, 43, 43);
-    flex: 1;
-}
-
-.column-red {
-    border: 1px solid rgb(97, 71, 71);
-    background-color: rgb(218, 45, 45);
-    flex: 1;
-}
-
-.column-blue {
-    border: 1px solid rgb(67, 62, 87);
-    background-color: rgb(63, 51, 221);
-    flex: 1;
-}
 
 footer {
     display: flex;
