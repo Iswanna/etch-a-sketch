@@ -124,13 +124,14 @@ form {
 
 .row {
     display: flex;
-    flex: 1:
+    flex: 1;
 }
 
 .column {
     border: 1px solid rgb(243, 239, 239);
     flex: 1;
 }
+
 
 
 footer {
